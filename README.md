@@ -7,49 +7,96 @@ Name: NIHARIKA MIRLE      SRN: PES2UG24AM105
 
 Name: NIDHI               SRN: PES2UG24AM102
 
-Transform system metrics into live, actionable insights.
-🧠 Overview
+🧠 What is this?
 
-Telemetry Pulse is a fully automated observability pipeline that continuously monitors:
+Telemetry Pulse is a fully automated, real-time observability system that continuously monitors your machine’s health and transforms it into interactive visual insights.
 
-CPU • Memory • Disk • Network
+It captures:
 
-and streams them into a real-time interactive dashboard.
+CPU usage
+Memory consumption
+Disk activity
+Network traffic
 
-🏗️ Architecture
+…and streams everything through a modern data pipeline to a live dashboard.
+
+🏗️ Architecture at a Glance
 Agent → Kafka → Consumer → InfluxDB → Grafana
-Agent → collects system metrics
-Kafka → ensures reliable streaming (no data loss)
-Consumer → processes & forwards data
-InfluxDB → stores time-series data
-Grafana → visualizes insights
-⚡ Quick Start
+Agent collects data
+Kafka streams it reliably
+Consumer processes it
+InfluxDB stores it
+Grafana visualizes it
+📁 Project Blueprint
+File	Purpose
+run.py	Master orchestrator (runs everything)
+agent.py	Collects system telemetry
+consumer.py	Processes and stores data
+docker-compose.yml	Spins up infrastructure
+requirements.txt	Python dependencies
+✨ Why This Project Stands Out
+Real-time data streaming pipeline
+Zero data loss architecture (Kafka buffering)
+Live interactive dashboards
+Fully automated setup (one command)
+Modular and scalable design
+🚀 One Command. Full System.
+Step 1: Install dependencies
 pip install -r requirements.txt
+Step 2: Launch everything
 python run.py
+🎬 What Happens Behind the Scenes?
 
-✔ Spins up Docker services
-✔ Starts data pipeline
-✔ Auto-configures dashboard
-✔ Opens Grafana instantly
+When you run run.py:
 
-📊 Features
-Real-time monitoring
-Automated setup (one command)
-Scalable pipeline design
-Zero data loss via Kafka buffering
-📁 Key Files
-File	Role
-run.py	Orchestrates entire system
-agent.py	Collects telemetry data
-consumer.py	Processes & stores metrics
-docker-compose.yml	Runs Kafka, InfluxDB, Grafana
-🔐 Access
+Infrastructure boots up (Kafka, Zookeeper, InfluxDB, Grafana)
+The system waits until all services are available
+Grafana is automatically configured
+Data source connected
+Dashboard created
+The data pipeline starts
+agent.py collects metrics
+consumer.py processes and stores data
+The dashboard opens automatically in your browser
+📊 Dashboard
+
+The system opens:
+
+Automated Telemetry Dashboard
+
+You can monitor:
+
+CPU usage trends
+Memory usage patterns
+Overall system behavior
+🔐 Default Login
 Username: admin
 Password: admin
-🔮 Future Scope
+🛑 Shutdown
 
-AI anomaly detection • Cloud deployment • Alerts • Multi-node monitoring
+Press:
 
-⭐
+Ctrl + C
+Stops all scripts
+Cleans up containers
+Leaves no background processes
+🔮 Future Enhancements
+AI-based anomaly detection
+Mobile monitoring interface
+Cloud deployment
+Smart alerting system
+Multi-node distributed monitoring
+💡 Inspiration
+
+This project demonstrates how modern systems achieve observability by transforming system-level data into actionable insights.
+
+🧑‍💻 Author Note
+
+Built as part of a systems engineering mini-project exploring:
+
+real-time data pipelines
+distributed systems
+observability tools
+⭐ Final Thought
 
 “If you can measure it, you can improve it.”
