@@ -1,8 +1,11 @@
 🚀𝑻𝒆𝒍𝒆𝒎𝒆𝒕𝒓𝒚-𝑪𝒐𝒍𝒍𝒆𝒄𝒕𝒊𝒐𝒏-𝒂𝒏𝒅-𝑨𝒈𝒈𝒓𝒆𝒈𝒂𝒕𝒊𝒐𝒏-𝑺𝒚𝒔𝒕𝒆𝒎
 Real-Time System Monitoring Engine
 
-Transform system metrics into live, actionable insights.
+Name: PRARTHANA D ACHARYA SRN: PES2UG24AM119
+Name: NIHARIKA MIRLE      SRN: PES2UG24AM105
+Name: NIDHI               SRN: PES2UG24AM102
 
+Transform system metrics into live, actionable insights.
 🧠 Overview
 
 Telemetry Pulse is a fully automated observability pipeline that continuously monitors:
