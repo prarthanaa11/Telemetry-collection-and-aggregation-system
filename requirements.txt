@@ -1,0 +1,4 @@
+psutil
+kafka-python
+influxdb-client
+requests
